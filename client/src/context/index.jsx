@@ -11,7 +11,7 @@ const StateContext = createContext();
 export const StateContextProvider = ({ children }) => {
   const { contract } = useContract(
     "0xe7862Dda1c2fFA374F7491305541983E193B0EAd"
-    // "0x560D55E6F42D2F3BbB051a12E4Cc80AAE25D456f"
+    // "0xF5184842bd17B4d6865D4b151F533ec3D9122baa"
   );
   // This part of the code uses object destructuring to extract the mutateAsync function from the 
   // object returned by useContractWrite. It then assigns this function to a new variable named createCampaign.
