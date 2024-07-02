@@ -5,8 +5,8 @@ import { CampaignDetails, CreateCampaign, Home, Profile } from "./pages";
 
 const App = () => {
   return (
-    <div className="relative sm:-8 p-4 bg-[#13131a] min-h-screen flex flex-row">
-      <div className="sm:flex hidden mr-10 relative">
+    <div className="relative sm:-8 p-4 bg-[#E0F7FA] min-h-screen flex flex-row sm:px-[50px] md:px-[55px] lg:px-[60px] xl:px-[80px]">
+      <div className="sm:flex hidden mr-5 relative">
         <Sidebar />
       </div>
       <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">
@@ -15,7 +15,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/create-campaign" element={<CreateCampaign />} />
-          {/* dynamic route */}
           <Route path="/campaign-details/:id" element={<CampaignDetails />} />
         </Routes>
       </div>
@@ -24,3 +23,5 @@ const App = () => {
 };
 
 export default App;
+
+
